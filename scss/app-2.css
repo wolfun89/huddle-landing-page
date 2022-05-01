@@ -1,0 +1,213 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+html body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #674baf;
+}
+
+html body .sect-img {
+  position: relative;
+  width: 100vw;
+  height: 50vh;
+}
+
+html body .sect-img .logo img {
+  position: absolute;
+  top: 4vh;
+  left: 7vw;
+  width: 30vw;
+}
+
+html body .sect-img .illustration img {
+  position: absolute;
+  top: 16vh;
+  margin: 0 auto;
+  left: 12vw;
+  width: 75vw;
+  height: auto;
+}
+
+html body .sect-img .bg-mobile img {
+  width: 100vw;
+  height: 45vh;
+}
+
+html body .sect-img .bg-desktop {
+  display: none;
+}
+
+html body .sect-txt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 50vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+html body .sect-txt h2, html body .sect-txt p {
+  color: white;
+  padding: 0 10vw;
+}
+
+html body .sect-txt h2 {
+  font-family: 'Poppins' , sans-serif;
+  margin-bottom: 3vh;
+  line-height: 2rem;
+  padding: 0 15vw;
+  font-size: 6vw;
+  text-transform: capitalize;
+}
+
+html body .sect-txt p {
+  font-family: 'Poppins' , sans-serif;
+  line-height: 1.5rem;
+  font-size: 3.75vw;
+}
+
+html body .sect-txt .button {
+  margin-top: 3vh;
+  padding: 1.2vh;
+  background-color: white;
+  font-family: 'Poppins' , sans-serif;
+  color: #674baf;
+  text-decoration: none;
+  width: 50vw;
+  height: 5vh;
+  font-size: 12px;
+  border-radius: 30px;
+}
+
+html body .sect-txt .button:hover {
+  background-color: #e882e8;
+  color: white;
+}
+
+html body .sect-txt .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 6vh;
+}
+
+html body .sect-txt .social a img {
+  width: 7vw;
+  -webkit-filter: invert(100%) sepia(2%) saturate(7500%) hue-rotate(215deg) brightness(102%) contrast(100%);
+          filter: invert(100%) sepia(2%) saturate(7500%) hue-rotate(215deg) brightness(102%) contrast(100%);
+}
+
+html body .sect-txt .social a img:hover {
+  -webkit-filter: invert(84%) sepia(29%) saturate(3172%) hue-rotate(244deg) brightness(93%) contrast(96%);
+          filter: invert(84%) sepia(29%) saturate(3172%) hue-rotate(244deg) brightness(93%) contrast(96%);
+}
+
+html body .sect-txt .social a img:first-child {
+  margin-right: 1vw;
+}
+
+html body .sect-txt .social a img:last-child {
+  margin-left: 1vw;
+}
+
+@media screen and (min-width: 375px) {
+  html body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    background-image: url(../images/bg-desktop.svg);
+  }
+  html body .sect-img {
+    width: 60vw;
+    height: 100vh;
+  }
+  html body .sect-img .logo img {
+    width: 200px;
+  }
+  html body .sect-img .illustration img {
+    width: 50vw;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: auto;
+    bottom: 10vh;
+    left: 5vw;
+  }
+  html body .sect-img .bg-mobile {
+    display: none;
+  }
+  html body .sect-txt {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    width: 40vw;
+    height: 100vh;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  html body .sect-txt h2 {
+    text-align: start;
+    width: 40vw;
+    padding: 0;
+    padding-right: 18vw;
+    line-height: 2.75rem;
+    font-size: 30px;
+  }
+  html body .sect-txt p {
+    padding: 0;
+    padding-right: 10vw;
+    text-align: start;
+    font-size: 14px;
+  }
+  html body .sect-txt .button {
+    width: 150px;
+  }
+  html body .sect-txt .social {
+    margin-top: 30vh;
+    margin-right: 10vw;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    margin-bottom: 3vh;
+  }
+  html body .sect-txt .social a img {
+    width: 35px;
+    -webkit-filter: invert(100%) sepia(0%) saturate(7485%) hue-rotate(255deg) brightness(109%) contrast(104%);
+            filter: invert(100%) sepia(0%) saturate(7485%) hue-rotate(255deg) brightness(109%) contrast(104%);
+  }
+  html body .sect-txt .social a img:first-child {
+    margin-right: 0.5vw;
+  }
+  html body .sect-txt .social a img:last-child {
+    margin-left: 0.5vw;
+  }
+}
+/*# sourceMappingURL=app-2.css.map */
